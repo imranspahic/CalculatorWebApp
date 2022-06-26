@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Calculator WebApp</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable:0">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/0.15.0/math.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1> Calculator WebApp </h1>
+      <img src="calculator-icon.png" alt="Calculator logo">
+
+      <i  class="fa fa-bars" id="header_icon" aria-hidden="true"></i>
+  		<div id="dekstop_menu" class="dekstop_menu-content">
+        <a href="index.html" id="Pbutton"> Home</a>
+  				<a href="polinomMaker.html" id="Pbutton"> Polynom Factorization</a>
+  				<a href="index.html" id="Pbutton" style="color:#219150; font-weight: 900;"> <i class="fa fa-circle" style="margin-right: 10px; color:#15a350;" aria-hidden="true"></i>Draw a graph</a>
+  				<a href="bug.html" id="BugButton">Report a bug</a>
+  		</div>
+    </header>
+
+
+  		<main class="graph-main">
+
+
+
+        <div class="wrapper" id="graph-wrapper">
+
+                  <div class="graphHeading">
+                    <p > Draw a graph </p>
+                  </div>
+
+                  <input type="text" id="canvasInput" name="" value="">
+
+
+                <div id="loader" class="display_none"></div>
+
+
+                        	<div class="graph-wrapper" id="graphwrapper">
+
+                               <div class="graphCanvasDiv">
+                                  <canvas id="graphCanvas" width="800" height="675"></canvas>
+                                  <canvas id="graphCanvas_coordinates" width="800" height="675"></canvas>
+                               </div>
+
+                          </div>
+
+      </div>
+
+
+
+
+
+
+
+  		</main>
+
+
+    <footer>  <h1> Created by Imran  </h1>
+
+  	</footer>
+    <script src="graph.js"></script>
+  </body>
+</html>

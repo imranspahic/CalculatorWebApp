@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Calculator WebApp</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable:0">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+      <h1> Calculator WebApp </h1>
+      <img src="calculator-icon.png" alt="Calculator logo">
+
+      <i  class="fa fa-bars" id="header_icon" aria-hidden="true"></i>
+  		<div id="dekstop_menu" class="dekstop_menu-content">
+        <a href="index.html" id="Pbutton"> Home</a>
+  				<a href="polinomMaker.html" id="Pbutton"> Polynom Factorization</a>
+  				<a href="graph.html" id="GraphButton">Draw a graph</a>
+  				<a href="index.html" id="Pbutton" style="color:#219150; font-weight: 900;"> <i class="fa fa-circle" style="margin-right: 10px; color:#15a350;" aria-hidden="true"></i>Report a bug</a>
+  		</div>
+    </header>
+
+
+  		<main class="bug-main">
+        <div class="wrapper" id="bug-wrapper">
+
+        <div class="bug_form">
+
+          <form action="signup.php" method="POST">
+              <input type="text" id='name' name="name" placeholder="Name" value="" required>
+              <br>
+              <input type="email" id='email' name="email" placeholder="E-mail" value="" required>
+              <br>
+              <input type="text" id='aboutbug' name="aboutbug" placeholder="What went wrong?" value="" required>
+              <br>
+              <input type="text" id='solution' name="solution" placeholder="Provide a solution" value="">
+              <br>
+
+              <input type="submit" name="submit" value="Submit">
+
+          </form>
+
+        </div>
+
+
+
+
+
+
+  		</main>
+  	</div>
+
+    <footer>  <h1> Created by Imran  </h1>
+
+  	</footer>
+
+    <script src="bug.js">
+
+    </script>
+  </body>
+</html>

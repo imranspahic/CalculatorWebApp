@@ -1,0 +1,1207 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+*  {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+
+
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: #403e3e;
+}
+header h1
+{
+	line-height: 100px;
+	text-align: center;
+	font-family: McLaren, sans-serif;
+	font-size: 35px;
+	color: white;
+}
+header img
+{
+	width: 100px;
+	transform: translate(400px, -100px);
+}
+#GenerateGraph{
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	font-size: 35px;
+	color: #262e9e;
+	padding: auto;
+	line-height: 40px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.GenerateGraphDiv {
+	width: 50px;
+	height: 40px;
+	border: 1px solid #262e9e;
+
+}
+.GenerateGraphDiv:hover {
+	cursor: pointer;
+}
+#header_icon {
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	transform:translate(1200px,-135px);
+}
+#header_icon:hover {
+	color: #d65e56;
+	cursor:pointer;
+
+}
+#header_icon_polinom {
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	transform:translate(1200px,-135px);
+}
+#header_icon_polinom:hover {
+	color: #d65e56;
+	cursor:pointer;
+
+}
+.wrapper {
+	width: 1300px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #f5f2f2;
+	overflow: hidden;
+}
+main {
+	height: 760px;
+}
+
+.calculator-container
+{
+	width: 330px;
+	height: 475px;
+	border: 1px solid #a6a6a6;
+	margin: 60px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(0px,-197px);
+
+}
+.calculator-numbers
+{
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+
+	background-color: #0ec277;
+	display: inline-block;
+	border-radius: 40%;
+}
+.calculator-numbers p
+{
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+.button-wrapper {
+
+	margin-left: 14px;
+}
+
+#result-display
+{
+	width: 300px;
+	height: 80px;
+	margin: 15px auto;
+	background-color: #4d4f4d;
+	border-radius: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	line-height: 80px;
+	font-size: 35px;
+	font-family: Montserrat;
+	color: #f5f5f5;
+	font-weight: 900;
+	text-shadow: 1px 1px #111;
+	display: inline-block;
+	overflow: hidden;
+}
+#clear {
+	width: 140px;
+	border-radius: 20px;
+}
+#backspace
+{
+	border-radius: 20px;
+	width: 140px;
+}
+
+.calculator-numbers:hover
+{
+
+
+	background-color: #227d4f;
+	cursor: pointer;
+}
+
+#_division p {
+	color:  #a1182f;
+	font-size: 20px;
+}
+#_multiplication p {
+	color:  #a1182f;
+	font-size: 20px;
+}
+
+#_subtraction p {
+	color:  #a1182f;
+	font-size: 20px;
+}
+
+#_addition p {
+	color:  #a1182f;
+	font-size: 20px;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #403e3e;
+}
+footer h1 {
+	line-height: 60px;
+	text-align: center;
+	font-family: McLaren, sans-serif;
+	font-size: 15px;
+	color: #b5b5b5;
+	letter-spacing: 0.2rem;
+
+}
+footer a {
+	text-decoration: none;
+}
+.report-bug{
+	color: #f55d6f;
+	transform: translate(1250px,-60px);
+	font-size: 12px;
+	width: 200px;
+}
+.report-bug:hover{
+	color: red;
+	cursor: pointer;
+}
+#bug_icon {
+	color: #f55d6f;
+	transform: translate(1265px,-99px);
+}
+#bug_icon:hover {
+	cursor: pointer;
+
+}
+#bug_icon_link{
+	transform: translate(-100px,0px);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	font-family: Montserrat;
+}
+
+.dekstop_menu-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 200px;
+	height: 240px;
+	overflow:auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	transform: translate(1190px,-130px);
+}
+.dekstop_menu-content a {
+  color: black;
+  padding: 15px 29px;
+  text-decoration: none;
+	font-size: 20px;
+  display: block;
+	font-family: Montserrat;
+}
+.dekstop_menu-content a:hover {
+background-color: #4fe3a5;
+color:#267856;
+}
+.CurrentPage {
+	color: #ff2e17;
+}
+
+.show {display: block;}
+
+#display_none_icon {
+	display:none;
+}
+#display_none_icon:hover {
+	 background-color: #cbf5d9;
+	 color: #0a5c25;
+}
+.scientific-calculator-mobile {
+	width: 290px;
+	height: 155px;
+	border: 1px solid #a6a6a6;
+	padding-top: 5px;
+	margin: 13px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(0px,-289px);
+}
+
+
+.Sbutton {
+	transform: translate(815px,235px);
+	width: 14px;
+	height: 200px;
+	background-color: #13f094;
+	border-radius: 10px;
+}
+
+.Sbutton:hover {
+	cursor: pointer;
+	background-color: #1a9296;
+	transition: 0.4s;
+	width: 24px;
+}
+.SbuttonHintShow {
+	width: 240px;
+	padding: 10px;
+	height: 20px;
+	float:left;
+	border: 1px solid #706e6e;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px #616060;
+		transform: translate(820px,-18px);
+}
+.SbuttonHintShow p {
+	font-size: 12px;
+	color: #706e6e;
+	font-family: Montserrat;
+	line-height: 20px;
+
+}
+
+#trigonometricfunct {
+	font-weight: 900;
+}
+@keyframes animatioN {
+
+}
+
+.scientific-calculator {
+	width: 160px;
+	height: 295px;
+	border: 1px solid #a6a6a6;
+	margin: 60px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(-248px,-607px);
+	padding-top: 5px;
+}
+
+.scientific-numbers
+{
+	width: 120px;
+	height: 60px;
+	margin-left: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	background-color: #0ec277;
+	display: inline-block;
+	border-radius: 40%;
+	transform: translate(-7px,0px);
+	border-radius: 20px;
+}
+.scientific-numbers p
+{
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+
+
+.scientific-numbers:hover
+{
+
+
+	background-color: #227d4f;
+	cursor: pointer;
+}
+
+.scientific-calculator-display-none {
+	display: none;
+}
+
+
+.PbuttonMainLonger {
+	width: 240px;
+	height: 60px;
+	margin: 5px;
+	background-color: #0ec277;
+	display: inline-block;
+	border-radius: 40%;
+
+
+	border-radius: 20px;
+}
+.PbuttonMainLonger p {
+	line-height: 60px;
+	font-size: 16px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+
+}
+.PbuttonMainLonger a {
+	text-decoration: none;
+}
+
+
+
+
+.Pbutton {
+
+	width: 240px;
+	height: 60px;
+	margin: 5px;
+	margin-left: 100px;
+	margin-top: 20px;
+	background-color: #0ec277;
+	border-radius: 40%;
+
+
+	border-radius: 20px;
+}
+.Pbutton p {
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+.Pbutton:hover {
+	background-color: #227d4f;
+	cursor: pointer;
+}
+
+
+.polinomHeading p {
+	margin-top: 60px;
+	margin-left: 15px;
+
+
+	font-size: 37px;
+
+	font-family: Montserrat;
+	color: #194180;
+	font-weight: 900;
+}
+
+.PbuttonNew{
+	transition: 0.5s;
+
+	width: 240px;
+	height: 60px;
+	margin-left: 100px;
+	margin-top: 20px;
+	background-color: red;
+
+
+	border-radius: 40%;
+	border-radius: 20px;
+}
+.PbuttonNew p {
+
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+
+
+.polinom-wrapper{
+	width: 800px;
+	height: 655px;
+	border: 1px solid #a6a6a6;
+	margin: 60px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(200px,-357px);
+}
+.polinom-wrapper-expand {
+	width: 800px;
+	height: 655px;
+	border: 1px solid #a6a6a6;
+	margin: 60px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(140px,-357px);
+}
+
+
+.PbuttonDis {
+
+	width: 240px;
+	height: 60px;
+	margin: 5px;
+	margin-left: 100px;
+	margin-top: 20px;
+	background-color: #0ec277;
+	border-radius: 40%;
+
+
+	border-radius: 20px;
+}
+.PbuttonDis p {
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+
+.Pol_displaynone {
+	display: none;
+}
+.DisplayFull {
+	display: block;
+
+	position: relative;
+}
+
+
+
+.scndForm p {
+ margin-left: 100px;
+ padding-top: 25px;
+
+	font-size: 25px;
+	color:#131a85;
+	font-family: Montserrat;
+	font-weight:100;
+}
+
+.scndForm input {
+	margin-top: 0px;
+	height: 25px;
+	width: 200px;
+	margin-left: 200px;
+	transform: translate(150px,-30px);
+	box-shadow:1px 1px 2px #a3a3a3,  -1px -1px 1px #a3a3a3 ;
+	font-size: 20px;
+	color: #2158b0;
+	padding-left: 10px;
+}
+
+.formula_2nd_degree {
+	font-size: 30px;
+	color: red;
+	font-weight:900;
+}
+#GenerateButton {
+	transform: translate(150px,20px);
+}
+
+#GenerateButton p {
+	transform: translate(-30px,5px);
+	line-height: 0px;
+	color: #e6e7f5;
+	font-weight: 900;
+}
+#GenerateButton_3rd_degree {
+	transform: translate(150px,20px);
+}
+#GenerateButton_3rd_degree p {
+	transform: translate(-30px,5px);
+	line-height: 0px;
+	color: #e6e7f5;
+	font-weight: 900;
+}
+.PbuttonBlue {
+	width: 240px;
+	height: 60px;
+	margin: 5px;
+	margin-left: 100px;
+	margin-top: 10px;
+	background-color: #262e9e;
+	border-radius: 40%;
+	border-radius: 20px;
+}
+.PbuttonBlue:hover {
+	background-color: #4d9cd1;
+	cursor: pointer;
+}
+.formula_2nd_degree {
+	width: 500px;
+	margin-top: 45px;
+	margin-left: 180px;
+	font-weight: 100;
+	font-family: Montserrat;
+
+	color: #152763;
+}
+.formula_2nd_degree_solved {
+	width: 500px;
+	margin-top: 45px;
+	margin-left: 180px;
+	font-weight: 100;
+
+	color: #152763;
+}
+#formula_2nd_degree_solved_first {
+	margin-top: 11px;
+	font-size: 24px;
+	font-family: Montserrat;
+}
+#formula_2nd_degree_solved_second {
+	font-size: 24px;
+	font-family: Montserrat;
+	margin-top: -2px;
+}
+
+#formula_2nd_degree_factorize {
+	font-size: 24px;
+	font-family: Montserrat;
+	margin-top: 11px;
+}
+.display_none {
+	display: none;
+}
+.loader_display {
+	position: absolute;
+ left: 50%;
+ top: 50%;
+ z-index: 1;
+ width: 70px;
+ height: 70px;
+ margin: -55px 0 0 -55px;
+ border: 11px solid #5de8ae;
+ border-radius: 50%;
+ border-top: 11px solid #403e3e;
+ width: 70px;
+ height: 70px;
+ -webkit-animation: spin 1.2s linear infinite;
+ animation: spin 1.2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.formula_3rd_degree {
+
+	width: 500px;
+	margin-top: 45px;
+	margin-left: 150px;
+	font-weight: 100;
+	font-family: Montserrat;
+
+	color: #152763;
+	font-size: 28px;
+
+}
+
+#formula_3rd_degree_explain {
+	font-size: 22px;
+	margin-top: 5px;
+	margin-left: 150px;
+}
+#formula_3rd_degree_solved_first{
+	font-size: 22px;
+	margin-top: 5px;
+	margin-left: 150px;
+
+}
+#formula_3rd_degree_solved_second{
+	font-size: 22px;
+	margin-top: 5px;
+	margin-left: 150px;
+	width: 90%;
+
+}
+#formula_3rd_degree_solved_third{
+	font-size: 22px;
+	margin-top: 5px;
+	width: 90%;
+	margin-left: 150px;
+}
+
+#BugButton{
+	color: #ff2e17;
+}
+
+.bug_form {
+  display: block;
+  margin: 0px auto;
+  width: 415px;
+  margin-top: 100px;
+
+}
+
+.bug_form input {
+
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+
+  padding-top: 0px;
+  padding-left: 10px;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px #a18c8a;
+  border: 1px solid red;
+}
+
+#aboutbug {
+  height: 60px;
+}
+
+#solution {
+  height: 60px;
+}
+
+.bug_form input[placeholder]
+{
+	font-size: 16px;
+  font-family: Montserrat;
+  color: #b32717;
+}
+
+.bug_form input[type='submit']
+{
+  margin-top: 30px;
+  width: 415px;
+  height: 50px;
+  border-radius: 10px;
+	font-size: 20px;
+  font-family: Montserrat;
+  text-align: center;
+  background-color: #ed5a4c;
+}
+
+.bug_form input:hover[type='submit']
+{
+  cursor:pointer;
+  background-color: #d1382a;
+  color: #ffffff;
+}
+.bug-main {
+	height: 600px;
+}
+#bug-wrapper {
+	height: 600px;
+}
+.graph-main {
+	height: 750px;
+}
+#graph-wrapper {
+	height: 750px;
+}
+
+.Gbutton {
+
+	width: 240px;
+	height: 60px;
+	margin: 5px;
+	margin-left: 70px;
+	margin-top: 20px;
+	background-color: #0ec277;
+	border-radius: 40%;
+
+
+	border-radius: 20px;
+}
+.Gbutton p {
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+.Gbutton:hover {
+	background-color: #227d4f;
+	cursor: pointer;
+}
+.graph-wrapper{
+	width: 800px;
+	height: 675px;
+	border: 1px solid #a6a6a6;
+	margin: 60px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #a3a3a3,  -1px -1px 5px #a3a3a3 ;
+	transform: translate(160px,-217px);
+}
+.graphHeading p {
+	margin-top: 60px;
+	margin-left: 55px;
+
+
+	font-size: 40px;
+
+	font-family: Montserrat;
+	color: #194180;
+	font-weight: 900;
+}
+
+.loader_display_graph {
+	position: absolute;
+ left: 50%;
+ top: 50%;
+ z-index: 1;
+ width: 70px;
+ height: 70px;
+ margin: 0px 0 0 90px;
+ border: 11px solid #5de8ae;
+ border-radius: 50%;
+ border-top: 11px solid #403e3e;
+ width: 70px;
+ height: 70px;
+ -webkit-animation: spin 1.2s linear infinite;
+ animation: spin 1.2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.GbuttonNew{
+	transition: 0.5s;
+
+	width: 240px;
+	height: 60px;
+	margin-left: 70px;
+	margin-top: 20px;
+	background-color: red;
+
+
+	border-radius: 40%;
+	border-radius: 20px;
+}
+.GbuttonNew p {
+
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: white;
+	font-weight: 900;
+}
+
+#graphCanvas {
+
+
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#GenerateButton_Graph {
+	transform: translate(180px,20px);
+	margin-top: -5px;
+}
+
+#GenerateButton_Graph p {
+	transform: translate(-40px,5px);
+	line-height: 0px;
+	color: #e6e7f5;
+	font-weight: 900;
+}
+
+#canvasInput {
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	color: #bd0e0b;
+	font-weight: 900;
+
+	width: 240px;
+	height: 60px;
+
+	margin-left: 70px;
+	margin-top: 20px;
+	background-color: #c5c7e3;
+
+
+
+	border-radius: 5px;
+}
+
+									@media only  screen and (max-device-width: 500px)
+									{
+									.calculator-container
+									{
+										margin-left: 16px;
+										transform: translate(0px,-230px);
+									}
+
+									header h1
+									{
+
+										font-size: 25px;
+										color: white;
+										margin-left: 80px;
+									}
+
+									header img
+									{
+										width: 70px;
+										transform: translate(20px, -84px);
+									}
+									.wrapper {
+										width: 100%;
+										height: 740px;
+
+									}
+									.polinom-wrapper-expand {
+										width: 100%;
+										height: 940px;
+
+									}
+									.PbuttonMainLonger {
+									display: none;
+									}
+
+									.Sbutton_Mobile{
+										width: 200px;
+										height: 14px;
+										background-color: #13f094;
+										border-radius: 10px;
+										transform: translate(80px,-169px);
+									}
+									.Sbutton_Mobile:hover {
+										cursor: pointer;
+										background-color: #1a9296;
+										transition: 0.4s;
+										height: 20px;
+									}
+
+									 #display_none_icon {
+										 display: block;
+										width: 30px;
+										height: 30px;
+										margin-left: 10px;
+										margin-top: 10px;
+										font-size: 30px;
+										text-align: center;
+
+										color: #12a150;
+										border: 1px solid #c6ccc8;
+										outline-width: 2px;
+										box-shadow: 2px 2px 3px grey;
+
+									}
+
+									.polinom-wrapper{
+										width: 99%;
+										height: 465px;
+										border: 1px solid #a6a6a6;
+										transform: translate(0px,0px);
+									}
+
+						    	.polinom-wrapper-expand{
+							    	width: 99%;
+										height: 585px;
+										border: 1px solid #a6a6a6;
+	 							  	transform: translate(0px,0px);
+										}
+										.report-bug{
+											transform: translate(80px,-10px);
+											font-size: 10px;
+										}
+										#bug_icon {
+											color: red;
+
+											transform: translate(105px,-49px);
+										}
+
+
+									.polinomHeading p {
+										margin-top: 20px;
+										margin-left: 15px;
+										text-align: center;
+
+
+										font-size: 25px;
+
+										font-family: Montserrat;
+										color: #194180;
+										font-weight: 900;
+									}
+									.Pbutton {
+										width: 200px;
+										height: 50px;
+										margin-left: auto;
+										margin-right: auto;
+										margin-top: 20px;
+
+									}
+									.Pbutton p {
+										line-height: 50px;
+										font-size: 16px;
+									}
+
+									.PbuttonNew{
+										transition: 0.5s;
+										width: 200px;
+										height: 50px;
+										margin-left: auto;
+										margin-right: auto;
+										margin-top: 20px;
+										background-color: red;
+									}
+
+									.PbuttonNew p {
+										line-height: 50px;
+										font-size: 16px;
+									}
+									.PbuttonDis {
+
+										width: 200px;
+										height: 50px;
+
+										margin-left: auto;
+										margin-top: 20px;
+										margin-right: auto;
+										background-color: #0ec277;
+									}
+									.PbuttonDis p {
+										line-height: 50px;
+										font-size: 16px;
+									}
+
+									.scndForm p {
+									 margin-left: 33px;
+									 padding-top: 20px;
+										font-size: 18px;
+									}
+
+									.scndForm input {
+										margin-top: 0px;
+										height: 25px;
+										width: 150px;
+										margin-left: 13px;
+										transform: translate(150px,-25px);
+										font-size: 20px;
+
+									}
+									.PbuttonBlue {
+										width: 170px;
+										height: 40px;
+										margin: 5px;
+										margin-left: 100px;
+										margin-top: 10px;
+										background-color: #262e9e;
+										border-radius: 40%;
+										border-radius: 20px;
+									}
+									#GenerateButton {
+										transform: translate(0px,5px);
+									}
+
+									#GenerateButton p {
+										transform: translate(7px,0px);
+									}
+									#GenerateButton_3rd_degree {
+										transform: translate(0px,5px);
+									}
+									#GenerateButton_3rd_degree p {
+										transform: translate(7px,0px);
+									}
+									.formula_2nd_degree {
+										width: 95%;
+										margin-top: 45px;
+										margin-left: 15px;
+										font-size: 19px;
+										font-weight: 100;
+										font-family: Montserrat;
+
+										color: #152763;
+									}
+									.formula_2nd_degree_solved {
+									width: 95%;
+										margin-top: 45px;
+
+										font-weight: 100;
+											margin-left: 15px;
+
+										color: #152763;
+									}
+									#formula_2nd_degree_solved_first {
+										margin-top: 11px;
+										font-size: 18px;
+										margin-left: 15px;
+										font-family: Montserrat;
+									}
+									#formula_2nd_degree_solved_second {
+										font-size: 18px;
+										font-family: Montserrat;
+										margin-left: 15px;
+										margin-top: -2px;
+									}
+
+									#formula_2nd_degree_factorize {
+										font-size: 18px;
+										font-family: Montserrat;
+										margin-left: 15px;
+										margin-top: 11px;
+									}
+									.formula_3rd_degree {
+										width: 95%;
+										margin-top: 35px;
+										margin-left: 15px;
+										font-weight: 100;
+										font-family: Montserrat;
+										color: #152763;
+										font-size: 19px;
+									}
+
+									#formula_3rd_degree_explain {
+										width: 95%;
+										margin-top: 7px;
+										margin-left: 15px;
+										font-weight: 100;
+										font-family: Montserrat;
+										color: #152763;
+										font-size: 17px;
+									}
+									#formula_3rd_degree_solved_first{
+										width: 95%;
+										margin-top: 7px;
+										margin-left: 15px;
+										font-weight: 100;
+										font-family: Montserrat;
+										color: #152763;
+										font-size: 17px;
+
+									}
+									#formula_3rd_degree_solved_second{
+										width: 95%;
+										margin-top: 7px;
+										margin-left: 15px;
+										font-weight: 100;
+										font-family: Montserrat;
+										color: #152763;
+										font-size: 17px;
+									}
+									#formula_3rd_degree_solved_third{
+										width: 95%;
+										margin-top: 7px;
+										margin-left: 15px;
+										font-weight: 100;
+										font-family: Montserrat;
+										color: #152763;
+										font-size: 17px;
+									}
+
+									.dekstop_menu-content {
+										display: none;
+
+									}
+									#header_icon {
+										display:none;
+									}
+									.bug_form {
+										display: block;
+										margin-left: 0px auto;
+										width: 315px;
+										margin-top: 50px;
+
+									}
+									.bug_form input {
+									  width: 300px;
+									}
+									.bug_form input[type='submit']
+									{
+									  margin-top: 30px;
+									  width: 310px;
+									  height: 50px;
+									  border-radius: 10px;
+										font-size: 20px;
+									  font-family: Montserrat;
+									  text-align: center;
+									  background-color: #ed5a4c;
+									}
+									.bug-main {
+										height: 500px;
+									}
+									#bug-wrapper {
+										height: 500px;
+									}
+
+									.graph-wrapper{
+										width: 99%;
+										height: 465px;
+										border: 1px solid #a6a6a6;
+										transform: translate(0px,-10px);
+									}
+									#graphCanvas {
+										width: 99%;
+										height: 465px;
+									}
+									#graphCanvas_coordinates{
+										height: 465px;
+										width: 99%;
+									}
+									.graphHeading p {
+										margin-top: 20px;
+
+									}
+
+									}

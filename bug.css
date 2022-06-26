@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+*  {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: #403e3e;
+}
+header h1
+{
+	line-height: 100px;
+	text-align: center;
+	font-family: McLaren, sans-serif;
+	font-size: 35px;
+	color: white;
+}
+header img
+{
+	width: 100px;
+	transform: translate(400px, -100px);
+}
+
+.wrapper {
+	width: 1300px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #f5f2f2;
+	overflow: hidden;
+}
+main {
+	height: 600px;
+}
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #403e3e;
+}
+footer h1 {
+	line-height: 60px;
+	text-align: center;
+	font-family: McLaren, sans-serif;
+	font-size: 15px;
+	color: #b5b5b5;
+	letter-spacing: 0.2rem;
+
+}
+footer a {
+	text-decoration: none;
+}
+.bug_form {
+  display: block;
+  margin: 0px auto;
+  width: 415px;
+  margin-top: 100px;
+
+}
+
+.bug_form input {
+
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+
+  padding-top: 0px;
+  padding-left: 10px;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px #a18c8a;
+  border: 1px solid red;
+}
+
+#aboutbug {
+  height: 60px;
+}
+
+#solution {
+  height: 60px;
+}
+
+.bug_form input[placeholder]
+{
+	font-size: 16px;
+  font-family: Montserrat;
+  color: #b32717;
+}
+
+.bug_form input[type='submit']
+{
+  margin-top: 30px;
+  width: 415px;
+  height: 50px;
+  border-radius: 10px;
+	font-size: 20px;
+  font-family: Montserrat;
+  text-align: center;
+  background-color: #ed5a4c;
+}
+
+.bug_form input:hover[type='submit']
+{
+  cursor:pointer;
+  background-color: #d1382a;
+  color: #ffffff;
+}
+
+
+    	@media only  screen and (max-device-width: 500px) {
+        header h1 {
+          font-size: 15px;
+
+        }
+      }

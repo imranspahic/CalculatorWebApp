@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable:0">
+    	<link rel="stylesheet" type="text/css" href="calculator.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="graph.js"></script>
+
+
+    <title> Calculator WebApp</title>
+  </head>
+  <body>
+    <header>
+
+      <h1> Calculator WebApp </h1>
+      <img src="calculator-icon.png" alt="Calculator logo">
+
+      <i  class="fa fa-bars" id="header_icon" aria-hidden="true"></i>
+  		<div id="dekstop_menu" class="dekstop_menu-content">
+        <a href="index.html" id="Pbutton"> Home</a>
+  				<a href="index.html" id="Pbutton" style="color:#219150; font-weight: 900;"> <i class="fa fa-circle" style="margin-right: 10px; color:#15a350;" aria-hidden="true"></i>Polynom Factorization</a>
+  				<a href="graph.html" id="GraphButton">Draw a graph</a>
+  				<a href="bug.html" id="BugButton">Report a bug</a>
+  		</div>
+    </header>
+
+    <main>
+
+    <div class="wrapper" id="graph-wrapper">
+              <div class="polinomHeading">
+                <p > Polynom Factorization </p>
+              </div>
+
+              <div class="Pbutton" id="Pbutton2">  <p> 2nd degree Polynom </p>    </div>
+              <div class="Pbutton" id="Pbutton3">  <p> 3rd degree Polynom </p>    </div>
+              <div class="Pbutton" id="Pbutton4">  <p> 4th degree Polynom </p>    </div>
+
+              <div class="settings-wrapper">
+
+              </div>
+
+
+
+        				<div class="polinom-wrapper" id="polinomwrapper">
+
+                  <!-- sECOND DEGREE Formula
+                  SECOND DEGREE FACTORIZATION
+              -->
+                  <div id="loader" class="display_none"></div>
+                    <div class="Pol_displaynone" class="secondDegreeContainer"  id="2nddegree">
+                       <form class="scndForm"  method="post">
+        <p class="seconddegree"> Enter <b>a</b> value: </p> <input type="number" id = "a_coeff_2nddegree" name="a-coeff" value="">
+        <hr>
+        <p class="seconddegree"> Enter <b>b</b> value: </p> <input type="number" id = "b_coeff_2nddegree"name="b-coeff" value="">
+        <hr>
+        <p class="seconddegree"> Enter <b>c</b> value: </p> <input type="number" id = "c_coeff_2nddegree"name="c-coeff" value="">
+        <hr>
+         <div class="PbuttonBlue" id="GenerateButton">  <p> Generate </p>    </div>
+
+                       </form>
+                <div class="GenerateGraphDiv" id="DrawChartdiv">
+
+
+        <a href="graph.html">
+        <i class="fa fa-line-chart" aria-hidden="true" id="GenerateGraph"></i>
+        </a>
+        </div>
+
+                 <p class="formula_2nd_degree" id="formula_2nd_degree"></p>
+                 <p class="formula_2nd_degree_solved" id="formula_2nd_degree_solved_first"></p>
+                 <p class="formula_2nd_degree_solved" id="formula_2nd_degree_solved_second"></p>
+                 <p class="formula_2nd_degree_solved" id="formula_2nd_degree_factorize"></p>
+
+                  </div>
+
+
+
+                 <!-- THIRD DEGREE Formula
+                 THIR DEGREE FACTORIZATION
+             -->
+
+
+                            <div class="Pol_displaynone" class="secondDegreeContainer"  id="3nddegree">
+                               <form class="scndForm"  method="post">
+                  <p class="seconddegree"> Enter <b>a</b> value: </p> <input type="number" id = "a_coeff_3rddegree" name="a-coeff" value="">
+                  <hr>
+                  <p class="seconddegree"> Enter <b>b</b> value: </p> <input type="number" id = "b_coeff_3rddegree"name="b-coeff" value="">
+                  <hr>
+                  <p class="seconddegree"> Enter <b>c</b> value: </p> <input type="number" id = "c_coeff_3rddegree"name="c-coeff" value="">
+                  <hr>
+                  <p class="seconddegree"> Enter <b>d</b> value: </p> <input type="number" id = "d_coeff_3rddegree"name="d-coeff" value="">
+                  <hr>
+                  <div class="PbuttonBlue" id="GenerateButton_3rd_degree">  <p> Generate </p>    </div>
+                               </form>
+
+                         <p class="formula_3rd_degree" id="formula_3rd_degree"></p>
+
+                         <p class="formula_2nd_degree_solved" id="formula_3rd_degree_explain"></p>
+                         <p class="formula_2nd_degree_solved" id="formula_3rd_degree_solved_first"></p>
+                         <p class="formula_2nd_degree_solved" id="formula_3rd_degree_solved_second"></p>
+                          <p class="formula_2nd_degree_solved" id="formula_3rd_degree_solved_third"></p>
+                         <p class="formula_2nd_degree_solved" id="formula_3rd_degree_factorize"></p>
+
+                             </div>
+
+
+
+
+        				</div>
+
+        </div>
+
+
+    </main>
+<script src="polinomMaker.js"></script>
+  </body>
+</html>

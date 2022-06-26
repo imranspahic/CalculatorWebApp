@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator WebApp</title>
+	<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable:0">
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<header>
+		<h1> Calculator WebApp </h1>
+		<img src="calculator-icon.png" alt="Calculator logo">
+
+		<i  class="fa fa-bars" id="header_icon" aria-hidden="true"></i>
+		<div id="dekstop_menu" class="dekstop_menu-content">
+			<a href="index.html" id="Pbutton" style="color:#219150; font-weight: 900;"> <i class="fa fa-circle" style="margin-right: 10px; color:#15a350;" aria-hidden="true"></i>Home</a>
+				<a href="polinomMaker.html" id="Pbutton"> Polynom Factorization</a>
+				<a href="graph.html" id="GraphButton">Draw a graph</a>
+				<a href="bug.html" id="BugButton">Report a bug</a>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main>
+
+			<i  class="fa fa-bars" id="display_none_icon" aria-hidden="true"></i>
+						<div id="myDropdown" class="dropdown-content">
+			    			<a href="polinomMaker.html" id="Pbutton">Polynom Factorization</a>
+								<a href="graph.html" >Draw a graph</a>
+								<a href="bug.html" id="BugButton">Report a bug</a>
+
+			  		</div>
+
+
+
+
+
+			<div class="Sbutton" id="Sbutton">
+
+			</div>
+
+			<div class="display_none" id="SbuttonHint">
+				<p> Click to show <span id='trigonometricfunct'> trigonometric </span>  functions  </p>
+
+			</div>
+
+
+
+
+			<div class="Sbutton_Mobile" id="Sbutton_Mobile">
+
+			</div>
+
+
+
+
+
+
+			<div class="calculator-container">
+
+				<div id="result-display"> 0 </div>
+				<div class="button-wrapper">
+
+					<div class="calculator-numbers" class="clear-btn" id="clear"> <p> AC </p> </div>
+					<div class="calculator-numbers" class="backspace-btn" id="backspace"> <p> &#8676; </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="seven"> <p> 7 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="eight"> <p> 8 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="nine"> <p> 9 </p> </div>
+					<div class="calculator-numbers" class="calc-operator-btn" id="_division"> <p> ÷ </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="four"> <p> 4 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="five"> <p> 5 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="six"> <p> 6 </p> </div>
+					<div class="calculator-numbers" class="calc-operator-btn" id="_multiplication"> <p> x </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="one"> <p> 1 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="two"> <p> 2 </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="three"> <p> 3 </p> </div>
+					<div class="calculator-numbers" class="calc-operator-btn" id="_subtraction"> <p> - </p> </div>
+					<div class="calculator-numbers" class="calc-num-btn" id="zero"> <p> 0 </p> </div>
+					<div class="calculator-numbers" id="period"> <p> . </p> </div>
+					<div class="calculator-numbers" id="equal"> <p> = </p> </div>
+					<div class="calculator-numbers" class="calc-operator-btn" id="_addition"> <p> + </p> </div>
+				</div>
+			</div>
+
+			<div class="scientific-calculator-display-none" id="sc">
+
+
+				<div class="button-wrapper">
+
+					<div class="scientific-numbers" class="clear-btn"  id="sin"> <p> sin </p> </div>
+					<div class="scientific-numbers" class="backspace-btn"   id="cos"> <p> cos </p> </div>
+					<div class="scientific-numbers" class="backspace-btn"   id="tan"> <p> tan </p> </div>
+					<div class="scientific-numbers" class="backspace-btn"    id="cot"> <p> cot </p> </div>
+				</div>
+			</div>
+		</main>
+
+	</div>
+
+
+
+	<footer>  <h1> Created by Imran  </h1>
+
+	</footer>
+
+
+
+ <script src="calculator.js"></script>
+</body>
+</html>
